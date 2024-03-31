@@ -28,7 +28,7 @@ const Login = (props) => {
         const enteredPass = passRef.current.value;
 
         try {
-            const response = await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDL8noeCp6M8xxaaGThaZU-M-fs5-MP0Ok", {
+            const response = await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBjPeLjDjZcvA3N5EH5-puj1643fExns2g", {
                 method: "POST",
                 body: JSON.stringify({
                     email: enteredEmail,

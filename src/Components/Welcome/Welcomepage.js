@@ -10,7 +10,7 @@ const Welcomepage = () => {
 
     const verifyEmailHandler = async () => {
         try {
-            const response = await fetch("https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyDL8noeCp6M8xxaaGThaZU-M-fs5-MP0Ok", {
+            const response = await fetch("https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyBjPeLjDjZcvA3N5EH5-puj1643fExns2g", {
                 method: "POST",
                 body: JSON.stringify({
                     requestType: "VERIFY_EMAIL",

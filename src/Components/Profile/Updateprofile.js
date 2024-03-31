@@ -18,7 +18,7 @@ const Updateprofile = () => {
     const fetchUserProfile = async () => {
       try {
         const response = await fetch(
-          `https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyDL8noeCp6M8xxaaGThaZU-M-fs5-MP0Ok`,
+          `https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyBjPeLjDjZcvA3N5EH5-puj1643fExns2g`,
           {
             method: 'POST',
             body: JSON.stringify({
@@ -56,7 +56,7 @@ const Updateprofile = () => {
     const enteredLocation = locationInputRef.current.value;
 
     try {
-      const response = await fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyDL8noeCp6M8xxaaGThaZU-M-fs5-MP0Ok", {
+      const response = await fetch("https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyBjPeLjDjZcvA3N5EH5-puj1643fExns2g", {
         method: "POST",
         body: JSON.stringify({
           idToken: localStorage["token"],
