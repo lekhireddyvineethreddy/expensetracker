@@ -47,7 +47,7 @@ const Profile = () => {
   return (
     <Fragment>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>Welcome to Expense Tracker!!!</div>
+        <div className={styles.logo}>Welcome to Expense Tracker  !!! ... </div>
         <div className={`${styles.navLinks} ${isOpen ? styles.showMenu : ''}`}>
 
           <div>
@@ -63,7 +63,7 @@ const Profile = () => {
           </div>
 
           <div className={styles.profile}>
-            {!showUpdate ? <><span>Your Profile is Incomplete.</span>{" "}</> : <><span>Your Profile is X% complete.</span>{" "}</>}
+            {!showUpdate ? <><span>Your Profile is Incomplete...</span>{" "}</> : <><span>Your Profile is 100% completed...</span>{" "}</>}
             <Link onClick={showUpdateHandler} to="/profile/update">Complete now</Link>
           </div>
 
